@@ -1,7 +1,7 @@
 export const getDetails = async (userName, setUser, setLoading, setError) => {
     try {
         setLoading(true);
-        const response = await fetch(`http://localhost:3000/details/get/${userName}`, {
+        const response = await fetch(`http://localhost:8000/details/get/${userName}`, {
             method: "GET"
         });
 
@@ -22,7 +22,7 @@ export const getDetails = async (userName, setUser, setLoading, setError) => {
 export const getStories = async (userName, setStories, setLoading, setError) => {
     try {
         setLoading(true);
-        const response = await fetch(`http://localhost:3000/stories/get/${userName}`, {
+        const response = await fetch(`http://localhost:8000/stories/get/${userName}`, {
             method: "GET"
         });
 
@@ -41,7 +41,7 @@ export const getStories = async (userName, setStories, setLoading, setError) => 
 export const getPosts = async (userName, setPosts, setLoading, setError) => {
     try {
         setLoading(true);
-        const response = await fetch(`http://localhost:3000/posts/get/${userName}`, {
+        const response = await fetch(`http://localhost:8000/posts/get/${userName}`, {
             method: "GET"
         });
 
